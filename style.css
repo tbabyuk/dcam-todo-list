@@ -1,11 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     background-color: #103756;
 }
 
 .container {
-    background-color: #103756;
-    max-width: 400px;
+    max-width: 500px;
     padding: 0;
 }
 
@@ -18,14 +22,10 @@ form input {
     color:rgb(225, 221, 221);
 }
 
-main {
-    background-color:#103756;
-}
-
-
 .todo-list li {
     background-color: #185281;
     color: rgb(225, 221, 221);
+    position: relative;
 }
 
 .delete {
@@ -36,3 +36,14 @@ main {
     display: none !important
 }
 
+
+.choose-priority {
+    position: absolute;
+    right: 15%;
+    width: 18%;
+    outline: none;
+}
+
+.error {
+    color: crimson;
+}

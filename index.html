@@ -15,35 +15,47 @@
 
 <body>
     <div class="container mt-5">
-        <header>
-            <h2 class="text-center text-light">To Do List</h2>
-            <form class="search-todos">
+            <h2 class="text-center text-light">DCAM To Do List</h2>
+            <form class="search-todos mt-5 mb-4">
                 <input class="rounded" type="text" name="search" placeholder="search to do items">
             </form>
-        </header>
 
         <main>
             <ul class="list-group todo-list">
                 <li class="list-group-item mb-1 rounded d-flex justify-content-between align-items-center">
                     <span>walk the dog</span>
+                    <select class="choose-priority rounded">
+                        <option value="low">LOW</option>
+                        <option value="medium">MEDIUM</option>
+                        <option value="high">HIGH</option>
+                    </select>
                     <i class="far fa-trash-alt delete"></i>
                 </li>
                 <li class="list-group-item mb-1 rounded d-flex justify-content-between align-items-center">
                     <span>buy groceries</span>
+                    <select class="choose-priority rounded">
+                        <option value="low">LOW</option>
+                        <option value="medium">MEDIUM</option>
+                        <option value="high">HIGH</option>
+                    </select>
                     <i class="far fa-trash-alt delete"></i>
                 </li>
                 <li style="display: none" class="list-group-item mb-1 rounded d-flex justify-content-between align-items-center">
                     <span>call Sam</span>
+                    <select class="choose-priority rounded">
+                        <option class="low" value="low">LOW</option>
+                        <option class="medium" value="medium">MEDIUM</option>
+                        <option class="high" value="high">HIGH</option>
+                    </select>
                     <i class="far fa-trash-alt delete"></i>
                 </li>
             </ul>
         </main>
 
-        <footer class="my-4">
-            <form class="add-todo">
-                <input class="rounded" type="text" name="search" placeholder="add new item">
+            <form class="add-todo mt-4 mb-0">
+                <input class="rounded" type="text" maxlength="40" name="search" placeholder="add new item">
             </form>
-        </footer>
+            <span class="error hidden">maximum characters allowed</span>
     </div>
     <script src="script.js"></script>
 </body>
