@@ -23,8 +23,12 @@ main {
 }
 
 
-.todos li {
+.todo-list li {
     background-color: #185281;
     color: rgb(225, 221, 221);
+}
+
+.delete {
+    cursor: pointer;
 }
 
