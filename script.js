@@ -43,6 +43,7 @@ searchToDos.addEventListener('input', (e) => {
   });
 });
 
+
 // add a todo item
 addToDos.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -53,6 +54,7 @@ addToDos.addEventListener('submit', (e) => {
   addToDos.reset();
 });
 
+
 // listen for length of add item input field
 addToDos.addEventListener('input', (e) => {
   const inputLength = e.target.value.length;
@@ -61,6 +63,7 @@ addToDos.addEventListener('input', (e) => {
     ? error.classList.remove('hidden')
     : error.classList.add('hidden');
 });
+
 
 // delete a todo item
 toDoList.addEventListener('click', (e) => {
