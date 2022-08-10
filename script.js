@@ -1,7 +1,6 @@
 const searchToDos = document.querySelector('.search-todos');
 const toDoList = document.querySelector('.todo-list');
 const addToDos = document.querySelector('.add-todo');
-const items = document.querySelectorAll('toDoList[li]');
 const error = document.querySelector('.error');
 
 
@@ -29,6 +28,10 @@ const createToDoItem = (text) => {
 // filter todo items based on search query
 searchToDos.addEventListener('input', (e) => {
   let query = e.target.value.toLowerCase();
+
+  console.log(toDoList.children)
+
+
 
   let items = Array.from(toDoList.children);
 
